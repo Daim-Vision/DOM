@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const div = document.createElement("div");
+
+      div.textContent =
+        "Lorem ipsum, dolor sit amet consecteturadipisicing, elit. Voluptatem incidunt cumquein! In, omnis repellendus.At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.";
+
+      div.style.border = "4px solid red";
+      div.style.borderColor = "red";
+      div.style.margin = "150px";
+      div.style.marginBottom = "20px";
+      div.style.height = "250px";
+      div.style.fontSize = "23px";
+      div.style.padding = "15px";
+      div.style.textAlign = "center";
+      div.style.borderRadius = "10px";
+
+      const a1 = document.createElement("a");
+      const a2 = document.createElement("a");
+      const a3 = document.createElement("a");
+
+      a1.href = "https://intocode.ru";
+      a1.textContent = "intocode";
+
+      a2.href = "https://www.google.ru";
+      a2.textContent = "google";
+
+      a3.href = "#";
+      a3.textContent = "instagram";
+
+      document.body.prepend(div);
+      document.body.append(a1);
+      document.body.append(a2);
+      document.body.append(a3);
+
+      a1.style.marginLeft = "350px";
+      a1.style.fontSize = "30px";
+      a1.target = "blank";
+      a2.style.marginLeft = "200px";
+      a2.style.fontSize = "30px";
+      a2.target = "blank";
+      a3.style.marginLeft = "200px";
+      a3.style.fontSize = "30px";
+      a3.target = "blank";
+    </script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>интукод</title>
+  </head>
+  <body>
+    <div id="main">
+      <ul id="list">
+        <li>html</li>
+        <li>css</li>
+      </ul>
+    </div>
+    <div id="copyright">(c) INTOCODE</div>
+    <script>
+      const h1 = document.createElement("h1");
+      const orgDiv = document.querySelector("div");
+      h1.textContent = "Работа с DOM";
+      const divMain = document.querySelector("#main");
+      const a = document.createElement("a");
+      a.href = "https://github.com/intocode/intro-dom";
+      a.textContent = "Сатья DOM";
+      divMain.append(a);
+      orgDiv.before(h1);
+
+      const html = document.querySelector("html");
+      let bodyColor = (color) => {
+        html.style.backgroundColor = color;
+      };
+
+      const list = document.querySelector("#list");
+      let addText = (text) => {
+        const li = document.createElement("li");
+        li.textContent = text;
+        list.append(li);
+      };
+      const body = document.querySelector("body");
+      const copy = document.querySelector("#copyright");
+      let delCopy = () => {
+        body.removeChild(copy);
+      };
+    </script>
+  </body>
+</html>
